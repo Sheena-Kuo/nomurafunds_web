@@ -1,0 +1,145 @@
+$color_orange: #ff6e3a
+
+
+*
+	font-family: 微軟正黑體
+	// border: solid 1px #666
+	
+
+// body 
+
+
+nav.navbar
+	transition-duration: 0.5s
+
+nav
+	.collapse.navbar-collapse
+		a.nav-link
+			transition: 0.5s
+			&:hover
+				color: $color_orange
+
+.navbar-top
+	background-color: transparent
+	border-bottom: solid 0.5px rgba(white,0.5)
+	a.navbar-brand
+		color: rgba(white,0.8)
+	.collapse.navbar-collapse
+		a.nav-link
+			transition: 0.5s
+			color: rgba(white,0.8)
+			&:hover
+				color: $color_orange
+
+	
+
+.navbar-top
+	.navbar-toggler.custom-navbar
+		border-color: rgba(white,0.8)
+		.navbar-toggler-icon
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+header.jumbotron
+	padding: 50px 20px
+	margin-bottom: 0px
+	text-align: center
+	background-image: url(https://static.rong360.com/gl/uploads/160906/139-160Z613392DP.jpg)
+	background-size: cover
+	background-attachment: fixed
+	.container
+		color: white
+		padding: 200px 0px
+		h1
+			font-weight: normal
+		hr
+			max-width: 50px
+			border: solid 2px $color_orange
+		h4
+			color: rgba(white,0.5)
+			font-weight: normal
+section
+	padding: 70px 20px
+	
+section#section_ask
+	background-color: $color_orange
+	.col-sm-4.img
+		height: 500px
+		background-image: url(https://i.imgur.com/OIyiqwO.png)
+		background-repeat: no-repeat
+		background-size: cover
+	.col-sm-8
+		display: flex
+		align-items: center
+		padding: 20px
+		
+section#section_about
+	img
+		width: 100%
+		height: 100%
+	.img_wrap
+		margin-top: 10px
+		margin-bottom: 10px
+		overflow: hidden
+
+section#section_story
+	padding: 70px 0px
+	background-color: #222
+	color: white
+	font-weight: 400
+	height: 400px
+	display: flex
+	justify-content: center
+	align-items: center
+	.ask_form
+		text-align: center
+		.label_text
+			width: 100px
+		input
+			display: inline-block
+			max-width: 350px
+			margin-left: auto
+			margin-right: auto
+
+section#section_salesman
+	display: -webkit-flex
+	display: flex
+	-webkit-justify-content: center
+	justify-content: center
+	// .container-fluid
+	// 	width: 500px
+	.sales_img
+		height: 300px
+		background-image: url(https://i.imgur.com/goUTBG7.png)
+		background-repeat: no-repeat
+		background-size: contain
+	
+footer.jumbotron
+	padding: 50px 20px
+	margin-bottom: 0px
+	text-align: center
+	background-image: url(https://static.rong360.com/gl/uploads/160906/139-160Z613392DP.jpg)
+	background-size: cover
+	background-attachment: fixed
+	input
+		background-color: transparent
+		max-width: 350px
+		margin-left: auto
+		margin-right: auto
+	.container
+		color: white
+		padding: 50px 0px
+		h1
+			font-weight: normal
+		hr
+			max-width: 50px
+			border: solid 2px $color_orange
+	
+// debug
+// header
+// 	display: none
+// section
+// 	display: none
+// footer
+// 	display: none
+// section#section_story
+// 	display: block
